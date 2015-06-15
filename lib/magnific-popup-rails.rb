@@ -2,9 +2,7 @@ require "magnific-popup-rails/version"
 require "magnific-popup-rails/engine"
 
 module MagnificPopup
-  module Rails
-  end
-class MyRailtie < Rails::Railtie
+class MagPopupRailtie < ::Rails::Railtie
   rake_tasks do
     load "Rakefile"
   end
