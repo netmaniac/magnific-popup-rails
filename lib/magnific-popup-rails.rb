@@ -3,6 +3,10 @@ require "magnific-popup-rails/engine"
 
 module MagnificPopup
   module Rails
-    # Your code goes here...
   end
+class MyRailtie < Rails::Railtie
+  rake_tasks do
+    load "Rakefile"
+  end
+end
 end
