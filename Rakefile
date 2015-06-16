@@ -10,7 +10,7 @@ namespace :mag_popup do
     url = "https://raw.github.com/dimsemenov/Magnific-Popup/master/dist/magnific-popup.css"
     path = "app/assets/stylesheets/magnific-popup/"
     outputfile = path+"magnific-popup.css"
-    FileUtils.mkpath(path) unles File.exists?(path)
+    FileUtils.mkpath(path) unless File.exists?(path)
     open(outputfile, 'wb') do |file|
       file << open(url).read
     end
@@ -19,7 +19,7 @@ namespace :mag_popup do
     url = "https://raw.github.com/dimsemenov/Magnific-Popup/master/dist/jquery.magnific-popup.js"
     path = "app/assets/javascripts/magnific-popup/"
     outputfile = path + "jquery.magnific-popup.js"
-    FileUtils.mkpath(path) unles File.exists?(path)
+    FileUtils.mkpath(path) unless File.exists?(path)
 
     open(outputfile, 'wb') do |file|
       file << open(url).read
