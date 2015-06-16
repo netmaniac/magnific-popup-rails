@@ -4,7 +4,7 @@ require "magnific-popup-rails/engine"
 module MagnificPopup
 class MagPopupRailtie < ::Rails::Railtie
   rake_tasks do
-    require "../Rakefile"
+    load File.join(File.dirname(__FILE__),'..','Rakefile')
   end
 end
 end
